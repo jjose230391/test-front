@@ -1,6 +1,6 @@
 import axios from "../../axios";
 
-const url = 'http://localhost:4000/api';
+const url = process.env.REACT_APP_URL_API;
 
 const getHeader = () => {
     if (JSON.parse(window.localStorage.getItem("token") !== null)) {
